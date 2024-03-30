@@ -1,9 +1,14 @@
 const searchInput = document.querySelector("#search-input");
+const googleSearchBtn = document.querySelector(".google-search-btn");
+
 
 searchInput.addEventListener("keydown", function(event) {
     if(event.code === "Enter") {
         search();
     }
+});
+googleSearchBtn.addEventListener("click", function() {
+    search();
 });
 
 function search() {
